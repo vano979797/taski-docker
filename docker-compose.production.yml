@@ -30,3 +30,9 @@ services:
       - static_volume:/staticfiles/
     ports:
       - 8000:80 
+    networks:
+      - shared_network
+      
+networks:
+  shared_network:
+    external: true
