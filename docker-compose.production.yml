@@ -24,6 +24,7 @@ services:
     volumes:
       - static_volume:/frontend_static
   gateway:
+    container_name: nginx2
     image: vano979797/taski_gateway  # Качаем с Docker Hub
     env_file: .env
     volumes:
